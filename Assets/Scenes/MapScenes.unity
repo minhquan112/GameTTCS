@@ -4738,6 +4738,7 @@ GameObject:
   - component: {fileID: 695228072}
   - component: {fileID: 695228076}
   - component: {fileID: 695228077}
+  - component: {fileID: 695228078}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4857,6 +4858,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canClickBox: 1
+--- !u!114 &695228078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695228071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea99ed199db7eb4dbed86c4a8177c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &696150239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6417,7 +6430,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 976359312}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 695228078}
+        m_TargetAssemblyTypeName: ClickHome, Assembly-CSharp
+        m_MethodName: ButtonHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &976359312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9086,7 +9111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1601, y: 1096}
+  m_AnchoredPosition: {x: -1580, y: 1096}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1486576769

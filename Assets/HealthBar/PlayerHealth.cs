@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour
 {
+     
     [SerializeField] int maxHealth;
     public static int currentHealth;
     public HealthBar healthBar;
@@ -40,9 +41,10 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         _safeTimeCoolDown-=Time.deltaTime;
-      if(Input.GetMouseButtonDown(0)&&currentHealth>=10)
+      if(currentHealth>=10 && Controller.isMove==true)
         {
         TakeDame(10);
+        Controller.isMove=false;
         }
        if(_safeTimeCoolDown<=0 && currentHealth<maxHealth){
             _safeTimeCoolDown=safeTime;

@@ -33,9 +33,10 @@ public class Controller : MonoBehaviour
        
 
         for (int i=0; i<ctrLs.Count; i++) {
-            if(ctrLs[i] == sprite )
+            if(ctrLs[i] == sprite &&isMove==false)
             {
-                
+               
+                isMove=true;
                 ctrLs[i].color=Color.green;
                 itemCtrl= ctrLs[i];
                 PlayerPrefs.SetInt("location", i);
@@ -46,6 +47,7 @@ public class Controller : MonoBehaviour
             else{
                 ctrLs[i].color=Color.white;
             }
+            
         }
     }
    

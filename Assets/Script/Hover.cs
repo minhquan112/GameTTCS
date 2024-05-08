@@ -12,9 +12,9 @@ public class Hover : MonoBehaviour
     {
 
         // if (!CanvasController.Instance.canClickBox) return;
-        Debug.Log(CanvasController.Instance.canClickBox);
+        // Debug.Log(CanvasController.Instance.canClickBox);
 
-        Debug.Log("Click hover");
+        // Debug.Log("Click hover");
         if (PlayerHealth.currentHealth >= 10)
         {
             Controller.Instance.OnCLick(this.GetComponent<SpriteRenderer>());
